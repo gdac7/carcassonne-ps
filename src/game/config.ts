@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
 import { MainMenuScene } from './scenes/MainMenuScene';
+import { PlayerSelectScene } from './scenes/PlayerSelectScene';
 
 export const GAME_WIDTH = 1280;
 export const GAME_HEIGHT = 720;
@@ -15,6 +16,6 @@ export function createGameConfig(parent: HTMLElement): Phaser.Types.Core.GameCon
       mode: Phaser.Scale.FIT,
       autoCenter: Phaser.Scale.CENTER_BOTH,
     },
-    scene: [MainMenuScene],
+    scene: [MainMenuScene, PlayerSelectScene],
   };
 }
