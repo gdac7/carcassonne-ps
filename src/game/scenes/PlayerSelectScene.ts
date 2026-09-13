@@ -65,10 +65,13 @@ export class PlayerSelectScene extends Phaser.Scene {
       })
       .setOrigin(0, 0.5);
 
+    const typeBoxOffset = 90;
+    const arrowGap = 150;
+
     const typeText = this.add
-      .text(centerX + 60, y, TYPE_LABEL[slot.type], {
+      .text(centerX + typeBoxOffset, y, TYPE_LABEL[slot.type], {
         fontFamily: 'Georgia, serif',
-        fontSize: '30px',
+        fontSize: '28px',
         color: '#ffd166',
       })
       .setOrigin(0.5);
@@ -89,8 +92,8 @@ export class PlayerSelectScene extends Phaser.Scene {
           this.setColor('#f4e4bc');
         });
 
-    const leftArrow = makeArrow('◀', -20);
-    const rightArrow = makeArrow('▶', 140);
+    const leftArrow = makeArrow('◀', typeBoxOffset - arrowGap);
+    const rightArrow = makeArrow('▶', typeBoxOffset + arrowGap);
 
     const toggle = () => {
       slot.type = nextType(slot.type);
