@@ -15,9 +15,15 @@ export class MainMenuScene extends Phaser.Scene {
   create() {
     const { width, height } = this.scale;
 
+    this.cameras.main.setBackgroundColor('#241a12');
+
     const background = this.add.image(width / 2, height / 2, 'background');
-    const scale = Math.max(width / background.width, height / background.height);
+    const scale = (height * 0.94) / background.height;
     background.setScale(scale);
+
+    this.add
+      .rectangle(width / 2, height / 2, background.displayWidth + 8, background.displayHeight + 8)
+      .setStrokeStyle(4, 0xf4e4bc, 0.6);
 
     this.add.rectangle(width / 2, height / 2, width, height, 0x000000, 0.35);
 

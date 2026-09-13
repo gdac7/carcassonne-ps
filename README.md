@@ -42,7 +42,7 @@ npm run dev
 
 ## Créditos dos assets
 
-- **Imagem de fundo**: "Eilean Donan Castle Panorama", via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Eilean_Donan_Castle_Panorama.jpg), licença [FAL (Free Art License)](https://artlibre.org/).
+- **Imagem de fundo**: recorte da iluminura de outubro do "Très Riches Heures du Duc de Berry" (Irmãos Limbourg, séc. XV), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Les_Tr%C3%A8s_Riches_Heures_du_duc_de_Berry_octobre.jpg), domínio público.
 - **Música do menu**: "Lord of the Land" — Kevin MacLeod (incompetech.com), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Lord_of_the_Land_(ISRC_USUAN1400022).mp3), licença [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/).
 
 ## Branches
